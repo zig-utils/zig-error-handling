@@ -80,8 +80,8 @@ const success = Result(i32, []const u8).ok(42);
 const failure = Result(i32, []const u8).err("Something went wrong");
 
 // Check result status
-if (success.isOk()) { /* ... */ }
-if (failure.isErr()) { /* ... */ }
+if (success.isOk()) { /_ ... _/ }
+if (failure.isErr()) { /_ ... _/ }
 ```
 
 ### Transforming Values
@@ -407,11 +407,13 @@ Zig has built-in error unions (`!T`), which are great for simple cases. This lib
 | Combine results | Manual | `combine` |
 
 Use error unions when:
+
 - You want the simplest solution
 - Errors are exceptional cases
 - You're okay with `try`/`catch` syntax
 
 Use Result when:
+
 - Errors are expected and need explicit handling
 - You want functional composition
 - You need fine-grained control over error flow
@@ -444,6 +446,7 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 ## Acknowledgments
 
 Inspired by:
+
 - Rust's `Result<T, E>` type
 - TypeScript's [neverthrow](https://github.com/supermacro/neverthrow) library
 - Functional programming error handling patterns
