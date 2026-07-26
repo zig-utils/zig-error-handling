@@ -435,6 +435,16 @@ If you're coming from Rust or TypeScript:
 | `.unwrap_or(d)` | `.unwrapOr(d)` | `.unwrapOr(d)` |
 | `.match` (via `match`) | `.match` | `.match(U, handlers)` |
 
+## Community
+
+For help, discussion about best practices, or any other conversation that would benefit from being searchable:
+
+[Discussions on GitHub](https://github.com/zig-utils/zig-error-handling/discussions)
+
+For casual chit-chat with others using this package:
+
+[Join the Stacks Discord Server](https://stacksjs.com/discord)
+
 ## License
 
 MIT
